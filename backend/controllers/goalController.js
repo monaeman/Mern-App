@@ -54,8 +54,8 @@ const setGoals = asyncHandler(async( req, res) => {
         }
         await Goal.findByIdAndRemove(req.params.id)
     res.status(200).json({id: req.params.id});
- })
-
+ });
+ 
 
 module.exports = {
     
