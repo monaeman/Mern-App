@@ -18,12 +18,9 @@ const userSchema = mongoose.Schema({
         required: [true, 'Please add a password']
     },
 
-    name:{
-        type: String,
-        required: [true, 'Please add a name']
-    },
+   
 
 
 
 })
-module.exports = mongoose.model('Goal, goalSchema')
+module.exports = mongoose.model('User', userSchema)
