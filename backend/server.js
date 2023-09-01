@@ -4,7 +4,7 @@ const port = process.env.PORT|| 5000
 const {errorHandler} =require('./middleware/errorMiddleware')
 const colors = require('colors') //not required
 const app = express()
-const connectDB = require('./config/db')
+const connectDB = require('./config/db.js')
 
 connectDB();
 //Middleware
